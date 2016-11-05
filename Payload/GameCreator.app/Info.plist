@@ -124,5 +124,7 @@
 	<false/>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 </dict>
 </plist>

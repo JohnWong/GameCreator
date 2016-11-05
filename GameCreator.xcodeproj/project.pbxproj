@@ -15,6 +15,10 @@
 		520EA4041DCE04A10005C5C7 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 520EA3F81DCE04A10005C5C7 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		520EA4061DCE04A10005C5C7 /* DKImagePickerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 520EA3F91DCE04A10005C5C7 /* DKImagePickerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		520EA4081DCE04A10005C5C7 /* AliyunOSSiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 520EA3FA1DCE04A10005C5C7 /* AliyunOSSiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		522616D31DCE141A00851BBE /* UIAlertView+WL.h in Headers */ = {isa = PBXBuildFile; fileRef = 522616D11DCE141A00851BBE /* UIAlertView+WL.h */; };
+		522616D41DCE141A00851BBE /* UIAlertView+WL.m in Sources */ = {isa = PBXBuildFile; fileRef = 522616D21DCE141A00851BBE /* UIAlertView+WL.m */; };
+		522616D71DCE1E8F00851BBE /* UIViewController+WL.h in Headers */ = {isa = PBXBuildFile; fileRef = 522616D51DCE1E8F00851BBE /* UIViewController+WL.h */; };
+		522616D81DCE1E8F00851BBE /* UIViewController+WL.m in Sources */ = {isa = PBXBuildFile; fileRef = 522616D61DCE1E8F00851BBE /* UIViewController+WL.m */; };
 		AAE19B6D1AB146DE006029B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE19B6C1AB146DE006029B9 /* main.m */; };
 		AAE19B701AB146DE006029B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE19B6F1AB146DE006029B9 /* AppDelegate.m */; };
 		AAE19B731AB146DE006029B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE19B721AB146DE006029B9 /* ViewController.m */; };
@@ -66,6 +70,10 @@
 		520EA3F81DCE04A10005C5C7 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Payload/Frameworks/SDWebImage.framework; sourceTree = "<group>"; };
 		520EA3F91DCE04A10005C5C7 /* DKImagePickerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DKImagePickerController.framework; path = Payload/Frameworks/DKImagePickerController.framework; sourceTree = "<group>"; };
 		520EA3FA1DCE04A10005C5C7 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AliyunOSSiOS.framework; path = Payload/Frameworks/AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		522616D11DCE141A00851BBE /* UIAlertView+WL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+WL.h"; sourceTree = "<group>"; };
+		522616D21DCE141A00851BBE /* UIAlertView+WL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+WL.m"; sourceTree = "<group>"; };
+		522616D51DCE1E8F00851BBE /* UIViewController+WL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WL.h"; sourceTree = "<group>"; };
+		522616D61DCE1E8F00851BBE /* UIViewController+WL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WL.m"; sourceTree = "<group>"; };
 		AAE19B671AB146DE006029B9 /* GameCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE19B6B1AB146DE006029B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE19B6C1AB146DE006029B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +128,8 @@
 		AAE19B5E1AB146DE006029B9 = {
 			isa = PBXGroup;
 			children = (
+				522616D51DCE1E8F00851BBE /* UIViewController+WL.h */,
+				522616D61DCE1E8F00851BBE /* UIViewController+WL.m */,
 				520EA4091DCE04B70005C5C7 /* Frameworks */,
 				AAE19B691AB146DE006029B9 /* GameCreator */,
 				AAE19BBB1AB147E0006029B9 /* PDebug */,
@@ -167,6 +177,8 @@
 				AAE19BDC1AB14C0F006029B9 /* PDebugEntry.h */,
 				AAE19BDB1AB14C0F006029B9 /* PDebugEntry.m */,
 				AAE19BBC1AB147E0006029B9 /* Supporting Files */,
+				522616D11DCE141A00851BBE /* UIAlertView+WL.h */,
+				522616D21DCE141A00851BBE /* UIAlertView+WL.m */,
 			);
 			path = PDebug;
 			sourceTree = "<group>";
@@ -197,6 +209,8 @@
 			files = (
 				AAE19BE01AB14C0F006029B9 /* PDebugEntry.h in Headers */,
 				AAE19BE21AB14C0F006029B9 /* fishhook.h in Headers */,
+				522616D71DCE1E8F00851BBE /* UIViewController+WL.h in Headers */,
+				522616D31DCE141A00851BBE /* UIAlertView+WL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522616D41DCE141A00851BBE /* UIAlertView+WL.m in Sources */,
 				AAE19BE11AB14C0F006029B9 /* fishhook.c in Sources */,
 				AAE19BDF1AB14C0F006029B9 /* PDebugEntry.m in Sources */,
+				522616D81DCE1E8F00851BBE /* UIViewController+WL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
