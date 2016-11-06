@@ -8,6 +8,7 @@
 
 #import "UIViewController+WL.h"
 #import <objc/runtime.h>
+#import <MapKit/MapKit.h>
 
 
 @implementation UIViewController (WL)
@@ -25,7 +26,21 @@
             Method m2 = class_getInstanceMethod(self, @selector(viewDidLoad));
             method_exchangeImplementations(m1, m2);
         }
+    } else if (self == NSClassFromString(@"AlbumLocationViewController")) {
+        
+        Method m1 = class_getInstanceMethod(self, @selector(al_viewDidLoad));
+        Method m2 = class_getInstanceMethod(self, @selector(viewDidLoad));
+        method_exchangeImplementations(m1, m2);
     }
+}
+
+- (void)al_viewDidLoad
+{
+    [self al_viewDidLoad];
+    MKMapView *mapView = [self valueForKey:@"mapView"];
+    mapView.showsUserLocation = YES;
+    mapView.showsScale = YES;
+    mapView.showsCompass = YES;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(nonnull NSArray<CLLocation *> *)locations
